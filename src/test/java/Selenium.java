@@ -33,26 +33,21 @@ public class Selenium {
 //        driver.get("https://vitimex.com.vn/account/register");
 //        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 //
-//        // Đợi các input hiển thị
 //        WebElement hoField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("customer[last_name]")));
 //        WebElement tenField = driver.findElement(By.name("customer[first_name]"));
 //        WebElement emailField = driver.findElement(By.name("customer[email]"));
 //        WebElement passwordField = driver.findElement(By.name("customer[password]"));
 //        WebElement registerButton = driver.findElement(By.xpath("//input[@type='submit' and @value='Đăng ký']"));
 //
-//        // Tạo email ngẫu nhiên
 //        String randomEmail = emailPrefix + new Random().nextInt(10000) + "@gmail.com";
 //
-//        // Nhập dữ liệu
 //        hoField.sendKeys(lastName);
 //        tenField.sendKeys(firstName);
 //        emailField.sendKeys(randomEmail);
 //        passwordField.sendKeys("huong@1234");
 //
-//        // Gửi form
 //        registerButton.click();
 //
-//        // Đợi chuyển trang
 //        wait.until(ExpectedConditions.or(
 //                ExpectedConditions.urlContains("account"),
 //                ExpectedConditions.urlContains("register")
